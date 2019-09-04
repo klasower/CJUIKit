@@ -161,7 +161,6 @@ UIScrollView *InsertScrollView(id superView, id<UIScrollViewDelegate> delegate, 
 
 UITableView *InsertTableView(id superView, id<UITableViewDelegate> delegate, id<UITableViewDataSource> dataSource, ConstraintMaker make) {
     UITableView *tableView = [[UITableView alloc] init];
-    tableView.backgroundColor = kColorBg;
     [tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     if (delegate) {
         tableView.delegate = delegate;
@@ -190,7 +189,6 @@ UITableView *InsertTableViewWithRowHeight(id superView, id<UITableViewDelegate> 
 UITableView *InsertGroupTableView(id superView, id<UITableViewDelegate> delegate, id<UITableViewDataSource> dataSource, CGFloat estimatedRowHeight, ConstraintMaker make) {
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
     [tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-    [tableView setBackgroundColor:kColorBg];
     if (delegate) {
         tableView.delegate = delegate;
     }

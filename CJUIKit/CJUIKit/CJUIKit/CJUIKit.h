@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Masonry/Masonry.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -174,8 +175,6 @@ UITableView *InsertGroupTableView(id _Nullable superView, id<UITableViewDelegate
  @return UIAlertController
  */
 UIAlertController *SetAlertController(UIAlertControllerStyle style, NSString *title, NSString *message, NSString *cancelTitle, AlertButtonAction _Nullable cancelAction);
-@end
-
 @end
 
 NS_ASSUME_NONNULL_END
